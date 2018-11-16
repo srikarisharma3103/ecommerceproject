@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="CustomerOrder_S191174100164")
+@Table(name="CustomerOrder_S191174100158")
 public class CustomerOrder {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)

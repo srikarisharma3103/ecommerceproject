@@ -22,7 +22,7 @@ public class CartItemDaoImpl implements CartItemDao{
 		s.saveOrUpdate(cartItem);
 		System.out.println("SAVE OR UPDATE");
 	}
-	@Override
+	
 	public void deleteFromCart(int id) {
 		Session  s = sf.getCurrentSession();
 		
@@ -90,20 +90,19 @@ public class CartItemDaoImpl implements CartItemDao{
 			s.flush();
 		return count;
 	}*/
-	@Override
 	public List<CartItem> getCart(String email) {
 		Session  s = sf.getCurrentSession();
 		 Query query=s.createQuery("from CartItem where user.email=?");
 		 query.setString(0, email);
 		return  query.list();
 	}
-	@Override
+	
 	public void removeCartItem(int cartItemId) {
 		Session s=sf.getCurrentSession();
 		CartItem cartItem=(CartItem)s.get(CartItem.class, cartItemId);
 		s.delete(cartItem);
 	}
-	@Override
+	
 	public void createCustomerOrder(CustomerOrder customerOrder) {
 		Session s=sf.getCurrentSession();
 		s.save(customerOrder);

@@ -37,12 +37,12 @@ public class ProductServiceImpl implements ProductService{
 	{
 		return pdao.getAllProducts();
 	}
-	@Override
+	
 	public List<Category> getAllCategories() {
 		
 		return pdao.getAllCategories();
 	}
-	@Override
+	
 	public void addCategory(Category category) {
 		pdao.addCategory(category);
 		

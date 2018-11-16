@@ -209,14 +209,14 @@ public class ProductDaoImpl implements ProductDao {
 		return product;
 		
 	}
-	@Override
+	
 	public List<Category> getAllCategories() {
 		Session session=sf.getCurrentSession();
 		Query query	=session.createQuery("from Category");
 		List<Category> category=query.list();
 		return category;
 	}
-	@Override
+	
 	public void addCategory(Category category) {
 		Session  s = sf.getCurrentSession();
 		//************************************************** INSERTION THROUGH SAVE() METHOD ************************************************************
@@ -230,7 +230,7 @@ public class ProductDaoImpl implements ProductDao {
 			else
 			{
 				System.out.println("--------------------------------------------------------------------------------------------------------");
-				System.out.println("CAETGORY RECORD INSERTION FAILED");
+				System.out.println("CATEGORY RECORD INSERTION FAILED");
 			}
 			s.flush();
 	}

@@ -28,7 +28,7 @@ public class CustomerDaoImpl implements CustomerDao {
 		authorities.setUser(user);
 		s.save(customer);
 	}
-	@Override
+	
 	public boolean isEmailUnique(String email) {
 		Session s=sf.getCurrentSession();
 		User user=(User)s.get(User.class, email);//select * from user where email='james.s@niit.com'
@@ -37,7 +37,7 @@ public class CustomerDaoImpl implements CustomerDao {
 		else //entered email already exists in the table
 			return false;
 	}
-	@Override
+	
 	public User getUser(String email) {
 		Session s=sf.getCurrentSession();
 		User u=(User)s.get(User.class, email);

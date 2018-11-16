@@ -14,7 +14,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 
 @Entity
-@Table(name="PRODUCT_S191174100164")
+@Table(name="PRODUCT_S191174100158")
 public class Product
 {
 	

@@ -13,7 +13,7 @@ import javax.persistence.Table;
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
-@Table(name="CATEGORY_S191174100164")
+@Table(name="CATEGORY_S191174100158")
 public class Category {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)

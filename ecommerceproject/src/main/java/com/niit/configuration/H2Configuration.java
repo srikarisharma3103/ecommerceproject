@@ -22,9 +22,6 @@ import com.niit.model.Product;
 import com.niit.model.ShippingAddress;
 import com.niit.model.User;
 
-
-
-
 @Configuration
 @EnableTransactionManagement
 public class H2Configuration {
@@ -34,7 +31,7 @@ public class H2Configuration {
 		System.out.println("Entering DataSource Bean creation method ");
 	    BasicDataSource dataSource = new BasicDataSource();
 	    dataSource.setDriverClassName("org.h2.Driver");
-	    dataSource.setUrl("jdbc:h2:tcp://localhost/~/test");
+	    dataSource.setUrl("jdbc:h2:tcp://localhost/~/srikari");
 	    dataSource.setUsername("sa");
 	    dataSource.setPassword("sa");
 	    System.out.println("DataSource bean " +dataSource);

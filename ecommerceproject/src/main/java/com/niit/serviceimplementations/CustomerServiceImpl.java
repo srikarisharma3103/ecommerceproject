@@ -20,12 +20,12 @@ public class CustomerServiceImpl implements CustomerService {
 	{
 		customerDao.registerCustomer(customer);
 	}
-	@Override
+	
 	public boolean isEmailUnique(String email) {
 		
 		return customerDao.isEmailUnique(email);
 	}
-	@Override
+	
 	public User getUser(String email) {
 		
 		return customerDao.getUser(email);

@@ -9,7 +9,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="CartItem_S191174100164")
+@Table(name="CartItem_S191174100158")
 public class CartItem {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
